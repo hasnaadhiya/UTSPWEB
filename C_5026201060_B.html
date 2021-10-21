@@ -160,10 +160,16 @@
                 document.forms["dataBarang"]["barcode"].focus();
                 return false;
             }
+            if (document.forms["dataBarang"]["barcode"].value.length < 10) {
+                alert("Masukkan kode barcode minimal 10 digit");
+                document.forms["dataBarang"]["barcode"].focus();
+                return false;
+            }
 
 
         }
     </script>
+
 </body>
 
 </html>
